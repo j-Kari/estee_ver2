@@ -1,0 +1,63 @@
+[
+    {
+        "id" : 1,
+        "name" : "Nutritious",
+        "image" : "nutritious"
+    },
+    {
+        "id" : 2,
+        "name" : "New",
+        "image" : "new"
+    },
+    {
+        "id" : 3,
+        "name" : "Best Sellers",
+        "image" : "bestsellers"
+    },
+    {
+        "id" : 4,
+        "name" : "Skincare",
+        "image" : "skincare"
+    },
+    {
+        "id" : 5,
+        "name" : "Makeup",
+        "image" : "makeup"
+    },
+    {
+        "id" : 6,
+        "name" : "Fragrance",
+        "image" : "fragrance"
+    },
+    {
+        "id" : 7,
+        "name" : "Sets & Gifts",
+        "image" : "setgift"
+    },
+    {
+        "id" : 8,
+        "name" : "Re-Nutriv",
+        "image" : "renutriv"
+    },
+    {
+        "id" : 9,
+        "name" : "Aerin",
+        "image" : "aerin"
+    },
+    {
+        "id" : 10,
+        "name" : "Discover",
+        "image" : "discover"
+    },
+    {
+        "id" : 11,
+        "name" : "Services",
+        "image" : "services"
+    },
+    {
+        "id" : 12,
+        "name" : "Offers",
+        "image" : "offers"
+    },
+    
+]
