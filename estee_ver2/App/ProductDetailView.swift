@@ -40,9 +40,12 @@ struct ProductDetailView: View {
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.leading)
                 }) // scroll end
-                // quanitity, favourite
+                // quantity, favourite
+                QuantityFavouriteDetailView()
+                    .padding(.vertical, 10)
                 // add to cart
-                Spacer()
+                AddToCartDetailView()
+                    .padding(.bottom, 20)
             }) // vstack end
             .padding(.horizontal)
             .background(
