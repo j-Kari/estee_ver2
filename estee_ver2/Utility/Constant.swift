@@ -30,6 +30,9 @@ var gridLayout: [GridItem] {
 }
 
 // ux
+
+let feedback = UIImpactFeedbackGenerator(style: .medium)
+
 // api
 // image
 // font

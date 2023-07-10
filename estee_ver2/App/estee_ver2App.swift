@@ -12,6 +12,7 @@ struct estee_ver2App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Shop())
         }
     }
 }
