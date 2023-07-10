@@ -11,6 +11,9 @@ import SwiftUI
 
 let models: [Model] = Bundle.main.decode("model.json")
 let categories: [Category] = Bundle.main.decode("category.json")
+let products: [Product] = Bundle.main.decode("product.json")
+
+let sampleProduct: Product = products[0]
 
 // color
 

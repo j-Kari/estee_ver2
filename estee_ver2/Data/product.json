@@ -1,0 +1,29 @@
+[
+    {
+        "id" : 1,
+        "name" : "2-in-1 Foam Cleanser",
+        "image" : "cleanser",
+        "price" : 27,
+        "size" : "4.2 oz",
+        "description" : "Purify. Pores. Glow. 2-in-1 Foam Cleanser works as a daily cleanser or weekly purifying mask. Cleanses + Deeply Purifies. Kicks off regimen. Healthier-looking. Blissful-feeling. Vitality-loving skin. ",
+        "color" : [0.96,0.72,0.54]
+    },
+    {
+        "id" : 2,
+        "name" : "Radiant Essence Treatment Lotion",
+        "image" : "lotion",
+        "price" : 42,
+        "size" : "6.7 oz",
+        "description" : "Prep. Infuse. Glow.",
+        "color" : [0.98,0.34,0.81]
+    },
+    {
+        "id" : 3,
+        "name" : "Melting Soft Creme/Mask Moisturizer",
+        "image" : "creme",
+        "price" : 48,
+        "size" : "1.7 oz",
+        "description" : "Pores. Hydration. Glow.",
+        "color" : [0.93,0.43,0.74]
+    }
+]
