@@ -19,7 +19,7 @@ let sampleProduct: Product = products[0]
 
 //let colorBackground: Color = Color("ColorBackground")
 let colorBackground: Color = Color(UIColor.systemBackground)
-let colorGray: Color = Color(UIColor.systemBlue)
+let colorGray: Color = Color(UIColor.systemPink)
 
 // layout
 

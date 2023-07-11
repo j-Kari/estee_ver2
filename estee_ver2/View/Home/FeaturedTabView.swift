@@ -12,7 +12,7 @@ struct FeaturedTabView: View {
         TabView {
             ForEach(models) { model in
                 FeaturedItemView(model: model)
-                    .padding(.top, 10)
+                    // .padding(.top, 10)
                     .padding(.horizontal, 15)
             } // End of ForEach
         } // End of TAB

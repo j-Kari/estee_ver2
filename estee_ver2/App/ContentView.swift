@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import UIKit
+import AVKit
 
 struct ContentView: View {
     // properties
     
     @EnvironmentObject var shop: Shop
+    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "video", withExtension: "mp4")!)
     
     // body
     var body: some View {
@@ -27,12 +30,20 @@ struct ContentView: View {
                     
                     ScrollView(.vertical, showsIndicators: false, content: {
                         VStack(spacing: 0) {
+                            
+                            VideoView()
+                                .scaledToFit()
+                                .padding(.bottom, 70)
+                            
+                            HashTagView()
+                               // .padding(.bottom, 30)
+                            
                             FeaturedTabView()
                             //    .padding(.vertical, 20)
                                 .frame(minWidth: 400, minHeight: 400)
                             
-                            CategoryGridView()
-                                .padding(.vertical)
+                            ReviewView()
+                                .padding(.bottom, 70)
                             
                             TitleView(title: "Nutritious")
                             
@@ -50,6 +61,11 @@ struct ContentView: View {
                                 } //for each end
                             }) // lazy vgrid end
                             .padding(.horizontal, 20)
+                            .padding(.bottom, 30)
+                            
+                            CategoryGridView()
+                                .padding(.vertical)
+                                .padding(.bottom, 20)
                             
                             FooterView()
                                 .padding(.horizontal)
