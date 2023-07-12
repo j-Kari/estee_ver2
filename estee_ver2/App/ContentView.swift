@@ -25,6 +25,7 @@ struct ContentView: View {
                         .padding(.bottom)
                         .padding(.top,
                                  UIApplication.shared.windows.first?.safeAreaInsets.top)
+                    // anything that could replace the deprecated code??
                         .background(Color.white)
                         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
                     
@@ -45,6 +46,10 @@ struct ContentView: View {
                             ReviewView()
                                 .padding(.bottom, 70)
                             
+                            CategoryGridView()
+                                .padding(.vertical)
+                                .padding(.bottom, 20)
+                            
                             TitleView(title: "Nutritious")
                             
                             LazyVGrid(columns: gridLayout, spacing: 15, content: {
@@ -63,12 +68,12 @@ struct ContentView: View {
                             .padding(.horizontal, 20)
                             .padding(.bottom, 30)
                             
-                            CategoryGridView()
-                                .padding(.vertical)
-                                .padding(.bottom, 20)
+                            Spacer()
                             
                             FooterView()
                                 .padding(.horizontal)
+                                .background(.gray)
+
                         } // VStack end
                     }) // ScrollView End
                     
