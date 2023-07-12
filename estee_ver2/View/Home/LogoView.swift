@@ -2,7 +2,7 @@
 //  LogoView.swift
 //  estee_base
 //
-//  Created by Kiran Kari on 7/8/23.
+//  Created by Jahnavi Kari on 7/8/23.
 //
 
 import SwiftUI

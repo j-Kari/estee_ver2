@@ -2,7 +2,7 @@
 //  HashTagView.swift
 //  estee_ver2
 //
-//  Created by Kiran Kari on 7/11/23.
+//  Created by Jahnavi Kari on 7/11/23.
 //
 
 import SwiftUI
@@ -12,6 +12,11 @@ struct HashTagView: View {
     //view
     var body: some View {
         VStack {
+            Text("NEW COLLECTION")
+                .font(.caption2)
+                .multilineTextAlignment(.center)
+                .padding(2)
+            
             Text("#NUTRITIOUS")
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)

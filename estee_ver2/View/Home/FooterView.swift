@@ -2,7 +2,7 @@
 //  FooterView.swift
 //  estee_base
 //
-//  Created by Kiran Kari on 7/8/23.
+//  Created by Jahnavi Kari on 7/8/23.
 //
 
 import SwiftUI
@@ -20,7 +20,7 @@ struct FooterView: View {
                 .foregroundColor(.gray)
                 .layoutPriority(0)*/
             
-            Text("Copyright of Jahavi Kari\nAll rights reserved")
+            Text("Estée Lauder x KODE With Klossy Challenge \nSubmission - Jahnavi Kari")
                 .font(.footnote)
                 .fontWeight(.bold)
                 .foregroundColor(.black)
@@ -28,6 +28,10 @@ struct FooterView: View {
                 .layoutPriority(1)
         } // End of VSTACK
         .padding()
+        .padding(.vertical, 30)
+        .frame(maxWidth: .infinity)
+        .background(Color.gray.edgesIgnoringSafeArea(.bottom))
+        .frame(alignment: .bottom)
     }
 }
     
@@ -35,6 +39,5 @@ struct FooterView_Previews: PreviewProvider {
     static var previews: some View {
         FooterView()
             .previewLayout(.sizeThatFits)
-            .background(.gray)
     }
 }

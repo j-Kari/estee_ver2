@@ -34,46 +34,45 @@ struct ContentView: View {
                             
                             VideoView()
                                 .scaledToFit()
-                                .padding(.bottom, 70)
+                                .padding(.bottom, 80)
                             
                             HashTagView()
                                // .padding(.bottom, 30)
+                                .padding(.bottom, 30)
+                            
+                            Highlights()
                             
                             FeaturedTabView()
                             //    .padding(.vertical, 20)
                                 .frame(minWidth: 400, minHeight: 400)
                             
                             ReviewView()
-                                .padding(.bottom, 70)
+                              //  .padding(.bottom, 70)
+                                .padding(.bottom, 10)
+                            
+                            Text("#SHOP")
+                                .font(.largeTitle)
+                                .multilineTextAlignment(.center)
+                                .fontWeight(.heavy)
+                                .padding(2)
+                                .padding(.top, 70)
+                            
+                            ProductGallery()
+                                .padding(.vertical)
+                                .frame(minWidth: 300, minHeight: 300)
+                            
                             
                             CategoryGridView()
                                 .padding(.vertical)
                                 .padding(.bottom, 20)
-                            
-                            TitleView(title: "Nutritious")
-                            
-                            LazyVGrid(columns: gridLayout, spacing: 15, content: {
-                                ForEach(products) { product in
-                                    ProductItemView(product: product)
-                                        .onTapGesture {
-                                            feedback.impactOccurred()
-                                            
-                                            withAnimation(.easeOut) {
-                                                shop.selectedProduct = product
-                                                shop.showingProduct = true
-                                            }
-                                        }
-                                } //for each end
-                            }) // lazy vgrid end
-                            .padding(.horizontal, 20)
-                            .padding(.bottom, 30)
                             
                             Spacer()
                             
                             FooterView()
                                 .padding(.horizontal)
                                 .background(.gray)
-
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            
                         } // VStack end
                     }) // ScrollView End
                     
@@ -83,7 +82,7 @@ struct ContentView: View {
                 ProductDetailView()
             }
         } //ZStack end
-        .ignoresSafeArea(.all, edges: .top)
+        .ignoresSafeArea(.all, edges: .vertical)
     }
 }
 

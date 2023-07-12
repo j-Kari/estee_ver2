@@ -2,7 +2,7 @@
 //  RatingsSizesDetailView.swift
 //  estee_ver2
 //
-//  Created by Kiran Kari on 7/10/23.
+//  Created by Jahnavi Kari on 7/10/23.
 //
 
 import SwiftUI
@@ -10,7 +10,8 @@ import SwiftUI
 struct RatingsSizesDetailView: View {
     // property
     
-    let sizes: [String] = ["XS", "S", "M", "L", "XL"]
+    let shades: [String] = ["L", "M", "D", "LW", "HC"]
+    
     
     // body
     var body: some View {
@@ -37,14 +38,14 @@ struct RatingsSizesDetailView: View {
                 
                 // sizes
                 VStack(alignment: .trailing, spacing: 3, content: {
-                    Text("sizes")
+                    Text("Shades")
                         .font(.footnote)
                         .fontWeight(.semibold)
                         .foregroundColor(colorGray)
                     HStack(alignment: .center, spacing: 5, content: {
-                        ForEach(sizes, id: \.self) { size in
+                        ForEach(shades, id: \.self) { shade in
                             Button(action: {}, label: {
-                                Text(size)
+                                Text(shade)
                                     .font(.footnote)
                                     .fontWeight(.heavy)
                                     .foregroundColor(colorGray)

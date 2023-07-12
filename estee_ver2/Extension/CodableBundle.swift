@@ -2,7 +2,7 @@
 //  CodableBundle.swift
 //  estee_ver2
 //
-//  Created by Kiran Kari on 7/9/23.
+//  Created by Jahnavi Kari on 7/9/23.
 //
 
 import Foundation
@@ -32,25 +32,3 @@ extension Bundle {
         return decodedData
     }
 }
-
-/*import UIKit
-
-extension Bundle {
-    func decode<T: Decodable>(_ type: T.Type, from file: String) -> T {
-
-        guard let url = self.url(forResource: file, withExtension: nil) else {
-            fatalError("Failed to locate \(file) in bundle.")
-        }
-
-        guard let data = try? Data(contentsOf: url) else {
-            fatalError("Failed to load \(file) from bundle.")
-        }
-
-        let decoder = JSONDecoder()
-
-        guard let decoded = try? decoder.decode(T.self, from: data) else {
-            fatalError("Failed to decode \(file) from bundle.")
-        }
-        return decoded
-    }
-}*/

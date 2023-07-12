@@ -2,7 +2,7 @@
 //  ReviewView.swift
 //  estee_ver2
 //
-//  Created by Kiran Kari on 7/11/23.
+//  Created by Jahnavi Kari on 7/11/23.
 //
 
 import SwiftUI

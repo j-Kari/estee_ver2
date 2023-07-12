@@ -2,7 +2,7 @@
 //  modelModel.swift
 //  estee_ver2
 //
-//  Created by Kiran Kari on 7/9/23.
+//  Created by Jahnavi Kari on 7/9/23.
 //
 
 import Foundation
