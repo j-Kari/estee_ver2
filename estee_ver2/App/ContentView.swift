@@ -26,8 +26,8 @@ struct ContentView: View {
                         .padding(.top,
                                  UIApplication.shared.windows.first?.safeAreaInsets.top)
                     // anything that could replace the deprecated code??
-                        .background(Color.white)
-                        .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
+                        .background(ghost)
+                        .shadow(color: space.opacity(0.05), radius: 5, x: 0, y: 5)
                     
                     ScrollView(.vertical, showsIndicators: false, content: {
                         VStack(spacing: 0) {
@@ -70,14 +70,14 @@ struct ContentView: View {
                             
                             FooterView()
                                 .padding(.horizontal)
-                                .background(.gray)
+                                .background(yinmn)
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                             
                         } // VStack end
                     }) // ScrollView End
                     
                 } // VStack end
-                .background(colorBackground.ignoresSafeArea(.all, edges: .all))
+                .background(ghost.ignoresSafeArea(.all, edges: .all))
             } else {
                 ProductDetailView()
             }

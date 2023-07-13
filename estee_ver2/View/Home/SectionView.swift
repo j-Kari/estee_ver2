@@ -25,7 +25,7 @@ struct SectionView: View {
             
             Spacer()
         } //vstack end
-        .background(colorGray.cornerRadius(12))
+        .background(bright.cornerRadius(12))
         .frame(width: 85)
     }
 }
@@ -35,6 +35,6 @@ struct SectionView_Previews: PreviewProvider {
         SectionView(rotateClockwise: false)
             .previewLayout(.fixed(width: 120, height: 240))
             .padding()
-            .background(colorBackground)
+            .background(ghost)
     }
 }

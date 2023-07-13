@@ -11,10 +11,13 @@ struct CategoryItemView: View {
     // properties
     
     let category: Category
+    @State private var showCat = false
     
     //body
     var body: some View {
-        Button(action:{}, label: {
+        Button(action:{
+            showCat.toggle()
+        }, label: {
             HStack(alignment: .center, spacing: 6) {
                 Image(category.image)
                     .renderingMode(.template)
@@ -36,6 +39,7 @@ struct CategoryItemView: View {
                 .stroke(Color.gray, lineWidth: 1)
             )
         }) // button end
+        .fullScreenCover(isPresented: $showCat, content: CategoryDetailView.init)
     }
 }
 

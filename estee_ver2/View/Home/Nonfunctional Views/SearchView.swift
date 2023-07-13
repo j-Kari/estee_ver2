@@ -2,7 +2,7 @@
 //  SearchView.swift
 //  estee_ver2
 //
-//  Created by Kiran Kari on 7/13/23.
+//  Created by Jahnavi Kari on 7/13/23.
 //
 
 import SwiftUI
@@ -13,7 +13,6 @@ struct SearchView: View {
     @State public var searchText = ""
     @State private var hideSearch = false
     @State public var searchIsActive: Bool = true
-    @EnvironmentObject var shop: Shop
     let names = ["Nutritious: 2-in-1 Foam Cleanser", "Nutritious: Radiant Essence Treatment Lotion", "Nutritious: Melting Soft Creme/Mask Moisturizer"]
     
     // body
@@ -24,9 +23,9 @@ struct SearchView: View {
                 Button(action: {
                     hideSearch.toggle()
                 }, label: {
-                    Image(systemName: "chevron.left")
+                    Image(systemName: "chevron.right")
                         .font(.title)
-                        .foregroundColor(.black)
+                        .foregroundColor(space)
                 }) // Button end
                 .fullScreenCover(isPresented: $hideSearch, content: ContentView.init)
               /*  .sheet(isPresented: $hideSearch) {
@@ -34,7 +33,7 @@ struct SearchView: View {
                 }*/
                 .padding(.horizontal,40)
                 //.padding(.top, 40)
-            }
+            } //hstack end
             if searchIsActive == true {
                 NavigationStack {
                     Text("Searching for \(searchText)")
@@ -45,8 +44,8 @@ struct SearchView: View {
             else {
                 ContentView()
             }
-        }
-    }
+        } //vstack end
+    } // SEARCH BAR BUT UNABLE TO DO ANYTHING ELSE. CLICK THE CHEVRON TO GO BACK TO THE HOME PAGE
 
     var searchResults: [String] {
         if searchText.isEmpty {
@@ -61,7 +60,6 @@ struct SearchView: View {
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         SearchView(/*isPresented: true*/)
-            .environmentObject(Shop())
     }
 }
 

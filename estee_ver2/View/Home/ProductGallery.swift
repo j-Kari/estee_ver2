@@ -36,7 +36,7 @@ struct ProductGallery_Previews: PreviewProvider {
     static var previews: some View {
         ProductGallery()
             .previewDevice("iPhone 14 Pro")
-            .background(Color.gray)
+            .background(ghost)
             .environmentObject(Shop())
         
     }

@@ -22,7 +22,7 @@ struct ReviewView: View {
                 .multilineTextAlignment(.center)
                 .fontWeight(.semibold)
                 .padding(2)
-                .foregroundColor(.black)
+                .foregroundColor(space)
                 .frame(maxWidth: .infinity, alignment: .trailing)
             
             Text("#( ˘ ³˘)♥                           ")

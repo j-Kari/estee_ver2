@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RatingsSizesDetailView: View {
+struct RatingsETCdetailView: View {
     // property
     
     let shades: [String] = ["L", "M", "D", "LW", "HC"]
@@ -21,15 +21,15 @@ struct RatingsSizesDetailView: View {
                 Text("Ratings")
                     .font(.footnote)
                     .fontWeight(.semibold)
-                    .foregroundColor(colorGray)
+                    .foregroundColor(bright)
                 
                 HStack(alignment: .center, spacing: 3, content: {
                     ForEach(1...5, id: \.self) {item in
                         Button(action: {}, label: {
                             Image(systemName: "star.fill")
                                 .frame(width: 28, height: 28, alignment: .center)
-                                .background(colorGray.cornerRadius(5))
-                                .foregroundColor(.white)
+                                .background(bright.cornerRadius(5))
+                                .foregroundColor(ghost)
                         }) // button end
                     } // for each end
                 }) // hstack 2 end
@@ -41,19 +41,19 @@ struct RatingsSizesDetailView: View {
                     Text("Shades")
                         .font(.footnote)
                         .fontWeight(.semibold)
-                        .foregroundColor(colorGray)
+                        .foregroundColor(bright)
                     HStack(alignment: .center, spacing: 5, content: {
                         ForEach(shades, id: \.self) { shade in
                             Button(action: {}, label: {
                                 Text(shade)
                                     .font(.footnote)
                                     .fontWeight(.heavy)
-                                    .foregroundColor(colorGray)
+                                    .foregroundColor(bright)
                                     .frame(width: 28, height: 28, alignment: .center)
-                                    .background(Color.white.cornerRadius(5))
+                                    .background(ghost.cornerRadius(5))
                                     .background(
                                     RoundedRectangle(cornerRadius: 5)
-                                        .stroke(colorGray, lineWidth: 2)
+                                        .stroke(bright, lineWidth: 2)
                                     ) // background end
                             })
                         }
@@ -63,9 +63,9 @@ struct RatingsSizesDetailView: View {
     }
 }
 
-struct RatingsSizesDetailView_Previews: PreviewProvider {
+struct RatingsETCdetailView_Previews: PreviewProvider {
     static var previews: some View {
-        RatingsSizesDetailView()
+        RatingsETCdetailView()
             .previewLayout(.sizeThatFits)
             .padding()
     }

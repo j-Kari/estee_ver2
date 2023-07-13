@@ -21,7 +21,7 @@ struct HeaderDetailView: View {
                 .font(.largeTitle)
                 .fontWeight(.black)
         }) // vstack end
-        .foregroundColor(.white)
+        .foregroundColor(ghost)
     }
 }
 
@@ -31,6 +31,6 @@ struct HeaderDetailView_Previews: PreviewProvider {
             .environmentObject(Shop())
             .previewLayout(.sizeThatFits)
             .padding()
-            .background(Color.gray)
+            .background(ghost)
     }
 }

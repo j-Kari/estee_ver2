@@ -35,12 +35,12 @@ struct ProductItemView: View {
                 //price
                 Text(product.formattedPrice)
                     .fontWeight(.semibold)
-                    .foregroundColor(.pink)
+                    .foregroundColor(bright)
                 
                 //size
                 Text(product.size)
                     .fontWeight(.semibold)
-                    .foregroundColor(.gray)
+                    .foregroundColor(colorGray)
             } // hstack end
         }) // vstack end
     }
@@ -51,6 +51,6 @@ struct ProductItemView_Previews: PreviewProvider {
         ProductItemView(product: products[0])
             .previewLayout(.fixed(width: 200, height: 300))
             .padding()
-            .background(colorBackground)
+            .background(ghost)
     }
 }

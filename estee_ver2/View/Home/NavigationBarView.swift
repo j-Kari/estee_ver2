@@ -11,7 +11,9 @@ struct NavigationBarView: View {
     // properties
     
     @State private var showSearch = false
+    @State private var visibleCart = false
     @State private var isAnimated: Bool = false
+    
     
     // body
     var body: some View {
@@ -41,18 +43,21 @@ struct NavigationBarView: View {
             
             Spacer()
             
-            Button(action: {}, label: {
+            Button(action: {
+                visibleCart.toggle()
+            }, label: {
                 ZStack {
                     Image(systemName: "cart")
                         .font(.title)
-                        .foregroundColor(.black)
+                        .foregroundColor(space)
                     
                     Circle()
-                        .fill(Color.red)
+                        .fill(bright)
                         .frame(width: 14, height: 14, alignment: .center)
                         .offset(x: 13, y: -10)
                 }
             }) // Button end
+            .fullScreenCover(isPresented: $visibleCart, content: CartView.init)
         } // HStack end
     }
 }

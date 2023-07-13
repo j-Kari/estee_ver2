@@ -35,6 +35,6 @@ struct CategoryGridView_Previews: PreviewProvider {
         CategoryGridView()
             .previewLayout(.sizeThatFits)
             .padding()
-            .background(colorBackground)
+            .background(ghost)
     }
 }

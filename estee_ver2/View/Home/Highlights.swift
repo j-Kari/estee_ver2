@@ -17,26 +17,31 @@ struct Highlights: View {
                 .multilineTextAlignment(.center)
                 .fontWeight(.heavy)
                 .padding(2)
+                .foregroundColor(bright)
             
             Text("• RED ALGAE FERMENT")
                 .font(.caption)
                 .multilineTextAlignment(.center)
                 .padding(2)
+                .foregroundColor(space)
             
             Text("• COCONUT WATER FERMENT")
                 .font(.caption)
                 .multilineTextAlignment(.center)
                 .padding(2)
+                .foregroundColor(space)
             
             Text("• SWEET KELP")
                 .font(.caption)
                 .multilineTextAlignment(.center)
                 .padding(2)
+                .foregroundColor(space)
             
             Text("• NUTRI-9 COMPLEX")
                 .font(.caption)
                 .multilineTextAlignment(.center)
                 .padding(2)
+                .foregroundColor(space)
             
         }
     }

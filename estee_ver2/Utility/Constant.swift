@@ -20,6 +20,11 @@ let sampleProduct: Product = products[0]
 //let colorBackground: Color = Color("ColorBackground")
 let colorBackground: Color = Color(UIColor.systemBackground)
 let colorGray: Color = Color(UIColor.systemPink)
+let ghost = Color(red: 0.9725, green: 0.9725, blue: 1.0)
+let mimi = Color(red: 1.0, green: 0.8549, blue: 0.9137)
+let space = Color(red: 0.1412, green: 0.1647, blue: 0.289)
+let bright = Color(red: 0.9843, green: 0.3765, blue: 0.498)
+let yinmn = Color(red: 0.0235, green: 0.2902, blue: 0.4235)
 
 // layout
 

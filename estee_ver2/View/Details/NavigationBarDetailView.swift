@@ -24,7 +24,7 @@ struct NavigationBarDetailView: View {
             }, label: {
                 Image(systemName: "chevron.left")
                     .font(.title)
-                    .foregroundColor(.white)
+                    .foregroundColor(ghost)
             }) // button chevron end
             
             Spacer()
@@ -32,7 +32,7 @@ struct NavigationBarDetailView: View {
             Button(action: {}, label: {
                 Image(systemName: "cart")
                     .font(.title)
-                    .foregroundColor(.white)
+                    .foregroundColor(ghost)
             }) // button cart end
         } // hstack end
     }
@@ -44,6 +44,6 @@ struct NavigationBarDetailView_Previews: PreviewProvider {
             .environmentObject(Shop())
             .previewLayout(.sizeThatFits)
             .padding()
-            .background(Color.gray)
+            .background(yinmn)
     }
 }

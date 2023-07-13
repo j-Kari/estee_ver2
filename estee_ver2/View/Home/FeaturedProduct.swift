@@ -25,6 +25,6 @@ struct FeaturedProductView_Previews: PreviewProvider {
         FeaturedProductView(product: products[0])
             .previewLayout(.sizeThatFits)
             .padding()
-            .background(colorBackground)
+            .background(ghost)
     }
 }

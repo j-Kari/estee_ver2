@@ -33,15 +33,19 @@ struct ProductDetailView: View {
             // bottom detail
             VStack(alignment: .center, spacing: 0, content: {
                 // rating, size
-                RatingsSizesDetailView()
+                RatingsETCdetailView()
                     .padding(.top, -20)
                     .padding(.bottom, 10)
                 // description
                 ScrollView(.vertical, showsIndicators: false, content: {
                     Text(shop.selectedProduct?.description ?? sampleProduct.description)
                         .font(.system(.body, design: .rounded))
-                        .foregroundColor(.gray)
-                        .multilineTextAlignment(.leading)
+                  //      .foregroundColor(.gray)
+                //        .multilineTextAlignment(.leading)
+                        .foregroundColor(space)
+                        .multilineTextAlignment(.center)
+                        .padding(.top, 10)
+                        .lineSpacing(5)
                 }) // scroll end
                 // quantity, favourite
                 QuantityFavouriteDetailView()
@@ -52,7 +56,7 @@ struct ProductDetailView: View {
             }) // vstack end
             .padding(.horizontal)
             .background(
-                Color.white
+                ghost
                     .clipShape(CustomShape())
                     .padding(.top, -105))
         }) // vstack end

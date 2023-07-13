@@ -13,7 +13,7 @@ struct LogoView: View {
             Text("Estée Lauder".uppercased())
                 .font(.title3)
                 .fontWeight(.black)
-                .foregroundColor(.black)
+                .foregroundColor(bright)
         } //HStack end
     }
 }

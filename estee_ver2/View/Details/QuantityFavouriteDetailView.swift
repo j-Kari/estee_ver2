@@ -43,11 +43,11 @@ struct QuantityFavouriteDetailView: View {
                 feedback.impactOccurred()
             }, label: {
                 Image(systemName: "heart.circle")
-                    .foregroundColor(.pink)
+                    .foregroundColor(bright)
             }) // button end
         }) // hstack end
         .font(.system(.title, design: .rounded))
-        .foregroundColor(.black)
+        .foregroundColor(space)
         .imageScale(.large)
     }
 }

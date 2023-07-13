@@ -11,7 +11,7 @@ struct FooterView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
             Text("Founded in 1946 by Estée Lauder, Estée Lauder has gained a worldwide reputation for elegance, luxury and superior quality. Through extensive research and stringent product evaluation, we are pleased to bring you skincare, makeup and fragrance products that are both gentle, highly effective, and uphold the finest standards of excellence.")
-                .foregroundColor(.black)
+                .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .layoutPriority(2)
             
@@ -23,14 +23,14 @@ struct FooterView: View {
             Text("Estée Lauder x KODE With Klossy Challenge \nSubmission - Jahnavi Kari")
                 .font(.footnote)
                 .fontWeight(.bold)
-                .foregroundColor(.black)
+                .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .layoutPriority(1)
         } // End of VSTACK
         .padding()
         .padding(.vertical, 30)
         .frame(maxWidth: .infinity)
-        .background(Color.gray.edgesIgnoringSafeArea(.bottom))
+        .background(yinmn.edgesIgnoringSafeArea(.bottom))
         .frame(alignment: .bottom)
     }
 }

@@ -25,6 +25,6 @@ struct FeaturedItemView_Previews: PreviewProvider {
         FeaturedItemView(model: models[0])
             .previewLayout(.sizeThatFits)
             .padding()
-            .background(colorBackground)
+            .background(ghost)
     }
 }

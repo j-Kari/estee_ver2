@@ -20,10 +20,12 @@ struct TopDetailView: View {
             VStack(alignment: .leading, spacing: 6, content: {
                 Text("Price")
                     .fontWeight(.semibold)
+                    .foregroundColor(ghost)
                 
                 Text(shop.selectedProduct?.formattedPrice ?? sampleProduct.formattedPrice)
                     .font(.largeTitle)
                     .fontWeight(.black)
+                    .foregroundColor(ghost)
                     .scaleEffect(1.35, anchor: .leading)
             }) // vstack end
             .offset(y: isAnimating ? -50 : -75)

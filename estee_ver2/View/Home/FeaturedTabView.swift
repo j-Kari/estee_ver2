@@ -24,6 +24,6 @@ struct FeaturedTabView_Previews: PreviewProvider {
     static var previews: some View {
         FeaturedTabView()
             .previewDevice("iPhone 14 Pro")
-            .background(Color.gray)
+            .background(ghost)
     }
 }
