@@ -10,16 +10,23 @@ import SwiftUI
 struct NavigationBarView: View {
     // properties
     
+    @State private var showSearch = false
     @State private var isAnimated: Bool = false
     
     // body
     var body: some View {
         HStack {
-            Button(action: {}, label: {
+            Button(action: {
+                showSearch.toggle()
+            }, label: {
                 Image(systemName: "magnifyingglass")
                     .font(.title)
                     .foregroundColor(.black)
             }) // Button end
+            /*.sheet(isPresented: $showSearch) {
+                SearchView()
+            }*/
+            .fullScreenCover(isPresented: $showSearch, content: SearchView.init)
         
             Spacer()
             

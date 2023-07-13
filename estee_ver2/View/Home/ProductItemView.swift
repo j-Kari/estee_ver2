@@ -5,12 +5,12 @@
 //  Created by Jahnavi Kari on 7/10/23.
 //
 
-// UNUSED COMPONENT. IN ORIGINAL DESIGN BUT DIDN'T END UP USING
 import SwiftUI
 
 struct ProductItemView: View {
     //properties
     
+    // UNUSED COMPONENT. IN ORIGINAL DESIGN BUT DIDN'T END UP USING
     let product: Product
     
     //body
